@@ -3,4 +3,7 @@
  */
 public class MountainHelper {
 
+    public void getHighestMountain(int[] mountains) {
+
+    }
 }
