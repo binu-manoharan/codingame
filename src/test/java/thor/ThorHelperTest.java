@@ -37,12 +37,21 @@ public class ThorHelperTest {
     }
 
     @Test
-    public void thor_should_go_north() throws Exception {
+    public void thor_should_go_south() throws Exception {
         ThorHelper thorHelper = new ThorHelper();
         thorY = 8;
 
         String direction = thorHelper.getNextDirection(lightX, lightY, thorX, thorY);
         assertDirection(direction, "Thor should go south", is("S"));
+    }
+
+    @Test
+    public void thor_should_go_north() throws Exception {
+        ThorHelper thorHelper = new ThorHelper();
+        thorY = 12;
+
+        String direction = thorHelper.getNextDirection(lightX, lightY, thorX, thorY);
+        assertDirection(direction, "Thor should go south", is("N"));
     }
 
     private void assertDirection(String direction, String reason, Matcher<String> e) {
