@@ -73,6 +73,26 @@ public class ThorHelperTest {
         assertDirection(direction, "Thor should go north east", is("NE"));
     }
 
+    @Test
+    public void thor_should_go_south_west() throws Exception {
+        ThorHelper thorHelper = new ThorHelper();
+        thorX = 12;
+        thorY = 8;
+
+        String direction = thorHelper.getNextDirection(lightX, lightY, thorX, thorY);
+        assertDirection(direction, "Thor should go south west", is("SW"));
+    }
+
+    @Test
+    public void thor_should_go_south_east() throws Exception {
+        ThorHelper thorHelper = new ThorHelper();
+        thorX = 8;
+        thorY = 8;
+
+        String direction = thorHelper.getNextDirection(lightX, lightY, thorX, thorY);
+        assertDirection(direction, "Thor should go south east", is("SE"));
+    }
+
     private void assertDirection(String direction, String reason, Matcher<String> e) {
         assertThat(reason, direction, is(notNullValue()));
         assertThat(reason, direction, e);
