@@ -9,6 +9,8 @@ class ThorHelper {
             return thorX > lightX ? "W" : "E";
         }else if (lightX == thorX){
             return thorY > lightY ? "N":"S";
+        }else if (lightY < thorY){
+            return thorX > lightX ? "NW":"NE";
         }
         return "";
     }
