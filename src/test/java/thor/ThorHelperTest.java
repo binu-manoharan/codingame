@@ -42,7 +42,7 @@ public class ThorHelperTest {
         thorY = 8;
 
         String direction = thorHelper.getNextDirection(lightX, lightY, thorX, thorY);
-        assertDirection(direction, "Thor should go north", is("N"));
+        assertDirection(direction, "Thor should go south", is("S"));
     }
 
     private void assertDirection(String direction, String reason, Matcher<String> e) {
