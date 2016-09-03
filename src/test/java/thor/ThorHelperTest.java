@@ -1,19 +1,18 @@
 package thor;
 
 import org.hamcrest.Matcher;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertThat;
 
 /**
  * Test for {@link ThorHelper}
  */
 public class ThorHelperTest {
 
-    private int lightX =  10;
+    private int lightX = 10;
     private int lightY = 10;
     private int thorX = 10;
     private int thorY = 10;
@@ -52,6 +51,16 @@ public class ThorHelperTest {
 
         String direction = thorHelper.getNextDirection(lightX, lightY, thorX, thorY);
         assertDirection(direction, "Thor should go south", is("N"));
+    }
+
+    @Test
+    public void thor_should_go_north_west() throws Exception {
+        ThorHelper thorHelper = new ThorHelper();
+        thorX = 12;
+        thorY = 12;
+
+        String direction = thorHelper.getNextDirection(lightX, lightY, thorX, thorY);
+        assertDirection(direction, "Thor should go north west", is("NW"));
     }
 
     private void assertDirection(String direction, String reason, Matcher<String> e) {
