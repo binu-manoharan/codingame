@@ -1,0 +1,11 @@
+package org.codingame.utils.testarea;
+
+/**
+ * Test class
+ */
+public class TestTemplate {
+    public static void main(String[] args) {
+        Greetings greetings = new Greetings();
+        greetings.sayHello();
+    }
+}
