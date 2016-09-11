@@ -8,4 +8,7 @@ public class MergeFiles {
     //TODO Create new file, list source directory and merge all java files into the new file.
     //TODO Make necessary substitutions.
     //import/package removed, public class/enum/interface/abstract class with public removed.
+    public void mergeFilesWithTemplate(String templatePath, String sourceDirectory, String outputFile) {
+
+    }
 }
