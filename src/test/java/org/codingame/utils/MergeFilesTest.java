@@ -21,7 +21,7 @@ public class MergeFilesTest {
         MergeFiles mergeFiles = new MergeFiles();
         mergeFiles.mergeFilesWithTemplate(TEST_TEMPLATE, SOURCE_DIRECTORY, OUTPUT_FILE);
 
-        File outputFile = new File(OUTPUT_FILE);
+        File outputFile = new File("src\\test\\java\\org\\codingame\\utils\\Player");
         assertThat("Output file exists", outputFile.exists(), is(true));
     }
 }
