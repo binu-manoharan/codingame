@@ -1,3 +1,5 @@
+package org.codingame.descent;
+
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;

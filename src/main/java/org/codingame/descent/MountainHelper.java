@@ -1,3 +1,5 @@
+package org.codingame.descent;
+
 import java.util.OptionalInt;
 import java.util.stream.IntStream;
 

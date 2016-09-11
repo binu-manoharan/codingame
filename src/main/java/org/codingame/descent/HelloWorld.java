@@ -1,3 +1,5 @@
+package org.codingame.descent;
+
 /**
  * Main class to print hello world
  */

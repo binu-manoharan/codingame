@@ -1,4 +1,4 @@
-package org.codingame.descent;
+package org.codingame.thor;
 
 /**
  * Help Thor reach the light
