@@ -14,7 +14,7 @@ public class MergeFilesTest {
 
     private static final String TEST_TEMPLATE = "TestTemplate";
     private static final String SOURCE_DIRECTORY = "testsourcedir";
-    private static final String OUTPUT_FILE = "Player.java";
+    private static final String OUTPUT_FILE = "Player";
 
     @Test
     public void output_file_should_exist() throws Exception {
