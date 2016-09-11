@@ -1,4 +1,4 @@
-package thor;
+package org.codingame.descent;
 
 import org.hamcrest.Matcher;
 import org.junit.Test;
